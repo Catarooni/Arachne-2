@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<PawnKindDef>
+    <defName>ApiniPlayer</defName>
+    <defaultFactionType>TribalApiniPlayer</defaultFactionType>
+        <label>apini</label>
+    <race>Apini</race>
+    <labelMale>apini drone</labelMale>
+    <labelFemale>apini</labelFemale>
+    <combatPower>25</combatPower>
+    <apparelTags>
+      <li>Bee</li>
+    </apparelTags>
+        <apparelMoney>
+      <min>200</min>
+      <max>400</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <backstoryCategory>ApiniBackstory</backstoryCategory>
+</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<FactionDef>
+    <defName>TribeApini</defName>
+    <label>tribal hive</label>
+    <description>A tribal hive of Apini, they toil hard and long everyday to survive. Apini are not the most intelligent sort, many communities never surpassing a neolithic level of technology. They range from friendly to outright hostile, depending on their previous interactions with humans. \n \nThey are often raided for their delicious honey.</description>
+    <pawnsPlural>tribal apini</pawnsPlural>
+    <baseSelectionWeight>1</baseSelectionWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <raidCommonality>100</raidCommonality>
+    <canStageAttacks>true</canStageAttacks>
+    <homeIconPath>Apini/npcZoom</homeIconPath>
+    <expandingIconTexture>Apini/npc</expandingIconTexture>
+    <colorSpectrum>
+      <li>(255,127,80)</li>
+      <li>(255,215,0)</li>
+      <li>(102, 0, 0)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>10</min>
+      <max>30</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>false</mustStartOneEnemy>
+    <factionNameMaker>NamerFactionHive</factionNameMaker>
+    <baseNameMaker>NamerbaseHive</baseNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategory>Tribal</backstoryCategory>
+    <leaderTitle>Overseer</leaderTitle>
+    <hairTags>
+      <li>Apini</li>
+    </hairTags>
+    <naturalColonyGoodwill>
+      <min>-50</min>
+      <max>10</max>
+    </naturalColonyGoodwill>
+    <caravanTraderKinds>
+      <li>Caravan_Apini_BulkGoods</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>base_Apini_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-15</min>
+      <max>50</max>
+    </allowedArrivalTemperatureRange>
+    <pawnGroupMakers>
+        <li>
+        <kindDef>Normal</kindDef>
+        <options>
+          <ApiniPawn>100</ApiniPawn>
+          <ApiniOverseer>10</ApiniOverseer>
+        </options>
+        </li>
+        <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <ApiniTrader>1</ApiniTrader>
+        </traders>
+        <carriers>
+          <Dromedary>2</Dromedary>
+           <Muffalo>1</Muffalo>
+        </carriers>
+        <guards>
+          <ApiniPawn>150</ApiniPawn>
+          <ApiniPawn>150</ApiniPawn>
+        </guards>
+      </li>
+      <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+          <ApiniPawn>100</ApiniPawn>
+          <ApiniOverseer>70</ApiniOverseer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+  
+    <PawnKindDef>
+    <defName>ApiniPawn</defName>
+    <baseRecruitDifficulty>0.75</baseRecruitDifficulty>
+        <label>apini</label>
+    <race>Apini</race>
+    <labelMale>apini drone</labelMale>
+    <labelFemale>apini</labelFemale>
+    <combatPower>25</combatPower>
+    <apparelTags>
+      <li>Bee</li>
+    </apparelTags>
+        <apparelMoney>
+      <min>200</min>
+      <max>400</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <backstoryCategory>Tribal</backstoryCategory>
+    <defaultFactionType>TribeApini</defaultFactionType>
+</PawnKindDef>
+
+<PawnKindDef>
+<defName>ApiniOverseer</defName>
+		<label>overseer</label>
+                    <race>Apini</race>
+    <combatPower>70</combatPower>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+    <itemQuality>Superior</itemQuality>
+    <minGenerationAge>35</minGenerationAge>
+    <factionLeader>true</factionLeader>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>3.0</max>
+    </gearHealthRange>
+      <apparelTags>
+      <li>Bee</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>600</min>
+      <max>1600</max>
+    </apparelMoney>
+    <weaponMoney>
+    <min>800</min>
+    <max>1000</max>
+    </weaponMoney>
+    <weaponTags>
+    <li>NeolithicRanged</li>
+    </weaponTags>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <backstoryCategory>ApiniBackstory</backstoryCategory>
+        <defaultFactionType>TribeApini</defaultFactionType>
+    </PawnKindDef>
+
+    <PawnKindDef>
+    <defName>ApiniTrader</defName>
+    <baseRecruitDifficulty>0.75</baseRecruitDifficulty>
+        <label>apini trader</label>
+    <race>Apini</race>
+        <trader>true</trader>
+    <combatPower>25</combatPower>
+    <apparelTags>
+      <li>Bee</li>
+    </apparelTags>
+        <apparelMoney>
+      <min>500</min>
+      <max>1000</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <backstoryCategory>ApiniBackstory</backstoryCategory>
+    <defaultFactionType>TribeApini</defaultFactionType>
+</PawnKindDef>
+
+<!-- Azuri -->
+<FactionDef>
+    <defName>TribeAzuri</defName>
+    <label>tribal swarm</label>
+    <description>A ravenous swarm of Azuri, out for Apini ichor. \n\nBest to avoid.</description>
+    <pawnsPlural>azuri swarm</pawnsPlural>
+    <baseSelectionWeight>1</baseSelectionWeight>
+    <canMakeRandomly>true</canMakeRandomly>
+    <appreciative>false</appreciative>
+    <raidCommonality>100</raidCommonality>
+    <canStageAttacks>true</canStageAttacks>
+    <homeIconPath>Azuri/orbital</homeIconPath>
+    <expandingIconTexture>Azuri/azurifaction</expandingIconTexture>
+    <colorSpectrum>
+      <li>(178,193,255)</li>
+      <li>(70,183,255)</li>
+      <li>(0, 222,255)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-50</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>true</mustStartOneEnemy>
+    <factionNameMaker>NamerFactionSwarm</factionNameMaker>
+    <baseNameMaker>NamerbaseSwarm</baseNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategory>Tribal</backstoryCategory>
+    <leaderTitle>Ichorborne</leaderTitle>
+    <hairTags>
+      <li>Azuri</li>
+    </hairTags>
+    <naturalColonyGoodwill>
+      <min>-70</min>
+      <max>0</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+        <li>
+        <kindDef>Normal</kindDef>
+        <options>
+          <AzuriPawn>100</AzuriPawn>
+          <AzuriBane>70</AzuriBane>
+        </options>
+        </li>
+        <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+          <AzuriPawn>100</AzuriPawn>
+        <AzuriPawn>100</AzuriPawn>
+          <AzuriPawn>100</AzuriPawn>
+          <AzuriPawn>100</AzuriPawn>
+          <AzuriBane>70</AzuriBane>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+  
+    <PawnKindDef>
+    <defName>AzuriPawn</defName>
+    <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+        <label>azuri</label>
+    <race>Azuri</race>
+    <combatPower>40</combatPower>
+    <apparelTags>
+      <li>Azuri</li>
+    </apparelTags>
+        <apparelMoney>
+      <min>200</min>
+      <max>400</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <backstoryCategory>Tribal</backstoryCategory>
+    <defaultFactionType>TribeAzuri</defaultFactionType>
+</PawnKindDef>
+
+
+    <PawnKindDef>
+    <defName>AzuriBane</defName>
+    <baseRecruitDifficulty>0.99</baseRecruitDifficulty>
+        <label>azuri</label>
+    <race>Azuri</race>
+    <itemQuality>Superior</itemQuality>
+    <minGenerationAge>10</minGenerationAge>
+    <factionLeader>true</factionLeader>
+    <combatPower>50</combatPower>
+    <apparelTags>
+      <li>Azuri</li>
+    </apparelTags>
+        <apparelMoney>
+      <min>1100</min>
+      <max>2500</max>
+    </apparelMoney>
+    <weaponMoney>
+    <min>1500</min>
+    <max>4000</max>
+    </weaponMoney>
+    <weaponTags>
+    <li>EliteGun</li>
+    </weaponTags>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <backstoryCategory>Tribal</backstoryCategory>
+    <defaultFactionType>TribeAzuri</defaultFactionType>
+</PawnKindDef>
+
+
+<PawnKindDef>
+    <defName>AzuriTrader</defName>
+    <baseRecruitDifficulty>0.99</baseRecruitDifficulty>
+        <label>azuri</label>
+    <race>Azuri</race>
+    <combatPower>40</combatPower>
+    <trader>true</trader>
+    <apparelTags>
+      <li>Azuri</li>
+    </apparelTags>
+        <apparelMoney>
+      <min>200</min>
+      <max>400</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <backstoryCategory>Tribal</backstoryCategory>
+    <defaultFactionType>TribeAzuri</defaultFactionType>
+</PawnKindDef>
+</Defs>

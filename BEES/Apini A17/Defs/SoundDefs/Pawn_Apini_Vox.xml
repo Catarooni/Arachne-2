@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SoundDef>
+		<defName>Pawn_Apini_Death</defName>
+    <context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Apini/Bzz</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>75</min>
+					<max>75</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1.4</min>
+					<max>1.6</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Apini_Wounded</defName>
+    <context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Apini/Bzz</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>75</min>
+					<max>75</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.5</min>
+					<max>2</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

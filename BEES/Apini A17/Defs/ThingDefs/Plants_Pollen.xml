@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--  <ThingDef ParentName="PlantBase">
+    <defName>PlantLavender</defName>
+    <label>lavender</label>
+    <description>A hardy herb known for its calming fragrance.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+    <ComfyTemperatureMin>0</ComfyTemperatureMin>
+    </statBases>
+    <graphicData>
+      <texPath>plants/lavender</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.2, 0.2)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <fillPercent>0.25</fillPercent>
+    <pathCost>30</pathCost>
+    <ingestible>
+      <nutrition>0.25</nutrition>
+    </ingestible>
+    <plant>
+			<fertilityMin>0.2</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>3</growDays>
+                        <reproduces>false</reproduces>
+			<harvestYield>15</harvestYield>
+			<harvestWork>800</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestDestroys>false</harvestDestroys>
+			<harvestedThingDef>Pollen</harvestedThingDef>
+                        <sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<visualSizeRange>
+				<min>0.8</min>
+				<max>1.5</max>
+			</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+		</plant>
+  </ThingDef> -->
+  
+<ThingDef ParentName="PlantBase">
+    <defName>PlantFrostbell</defName>
+    <label>frostbell</label>
+    <description>A unique flower that has been cultivated by the apini for centuries. It is often cool to the touch.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+    <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <ComfyTemperatureMax>10</ComfyTemperatureMax>
+    </statBases>
+    <graphicData>
+      <texPath>plants/frostbell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.2, 0.2)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <fillPercent>0.25</fillPercent>
+    <pathCost>30</pathCost>
+    <ingestible>
+      <nutrition>0.25</nutrition>
+    </ingestible>
+    <plant>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<growDays>5</growDays>
+                        <reproduces>false</reproduces>
+			<harvestYield>15</harvestYield>
+			<harvestWork>800</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestedThingDef>Pollen</harvestedThingDef>
+                        <sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<visualSizeRange>
+				<min>0.7</min>
+				<max>1.0</max>
+			</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+                     <lifespanFraction>15</lifespanFraction>
+		</plant>
+  </ThingDef>
+
+</Defs>

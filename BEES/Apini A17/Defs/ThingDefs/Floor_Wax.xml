@@ -1,0 +1,53 @@
+<Defs>
+<TerrainDef Name="FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>135</WorkToBuild>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+  
+   <TerrainDef  ParentName="FloorBase">
+    <DefName>ApiniWaxFloor</DefName>
+    <label>beeswax floor</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>Floor made from beeswax. Has a sweet aroma.</Description>
+    <texturePath>floors/honeycomb</texturePath>
+    <color>(255,228,181)</color>
+    <statBases>
+      <WorkToBuild>100</WorkToBuild>
+      <Beauty>2</Beauty>
+    </statBases>
+    <CostList>
+      <ApiniWax>3</ApiniWax>
+    </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+
+   <TerrainDef  ParentName="FloorBase">
+    <DefName>ApiniWaxTile</DefName>
+    <label>beeswax tile</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>Tile made from beeswax. Requires a fair amount of work. Has a sweet aroma.</Description>
+    <texturePath>floors/hextile</texturePath>
+    <EdgeType>Hard</EdgeType>
+    <statBases>
+      <WorkToBuild>400</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <CostList>
+      <ApiniWax>5</ApiniWax>
+    </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+
+</Defs>

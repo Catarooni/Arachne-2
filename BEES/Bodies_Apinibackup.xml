@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<BodyPartDef>
+    <defName>BeeLeftWing</defName>
+    <label>left wing</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <useDestroyedOutLabel>true</useDestroyedOutLabel>
+    <beautyRelated>true</beautyRelated>
+    <dontSuggestAmputation>false</dontSuggestAmputation>
+    <tags>
+        <li>Moving_way</li>
+    </tags>
+  </BodyPartDef>
+
+
+ <BodyPartDef>
+    <defName>BeeRightWing</defName>
+    <label>right wing</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <useDestroyedOutLabel>true</useDestroyedOutLabel>
+    <beautyRelated>true</beautyRelated>
+    <dontSuggestAmputation>false</dontSuggestAmputation>
+    <tags>
+        <li>Moving_way</li>
+    </tags>
+  </BodyPartDef>
+
+ 
+ <BodyPartDef>
+    <defName>RightAntenna</defName>
+    <label>right antenna</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <useDestroyedOutLabel>true</useDestroyedOutLabel>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+    </tags>
+    <frostbiteVulnerability>5</frostbiteVulnerability>
+  </BodyPartDef>
+
+    <BodyPartDef>
+    <defName>LeftAntenna</defName>
+    <label>left antenna</label>
+    <hitPoints>10</hitPoints>
+    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <useDestroyedOutLabel>true</useDestroyedOutLabel>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+    </tags>
+    <frostbiteVulnerability>5</frostbiteVulnerability>
+  </BodyPartDef>
+
+   <BodyPartDef>
+    <defName>RightMandible</defName>
+    <label>right mandible</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <oldInjuryBaseChance>0.1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+
+    <BodyPartDef>
+    <defName>LeftMandible</defName>
+    <label>left mandible</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <oldInjuryBaseChance>0.1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+    </tags>
+    </BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Thorax</defName>
+		<label>thorax</label>
+		<hitPoints>75</hitPoints>
+		<beautyRelated>false</beautyRelated>
+		<oldInjuryBaseChance>0.1</oldInjuryBaseChance>
+		<dontSuggestAmputation>true</dontSuggestAmputation>
+		   <isSolid>true</isSolid>
+		<tags>
+		  <li>Breathing_way</li>
+		  <li>Talking_way</li>
+		  <li>Spine</li>
+		</tags>
+    </BodyPartDef>
+
+	<BodyPartDef>
+		<defName>FrontLeftApiniInsectLeg</defName>
+		<label>front left leg</label>
+		<hitPoints>20</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<oldInjuryBaseChance>0</oldInjuryBaseChance>
+		<skinCovered>false</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationCore</li>
+    </tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>FrontRightApiniInsectLeg</defName>
+		<label>front right leg</label>
+		<hitPoints>20</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<oldInjuryBaseChance>0</oldInjuryBaseChance>
+		<skinCovered>false</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationCore</li>
+    </tags>
+	</BodyPartDef>
+
+<BodyPartGroupDef>
+    <defName>ApiniThorax</defName>
+    <label>thorax</label>
+    <listOrder>100</listOrder>
+</BodyPartGroupDef>
+<BodyPartGroupDef>
+    <defName>RearLeftInsectLeg</defName>
+    <label>rear left leg</label>
+    <listOrder>10</listOrder>
+</BodyPartGroupDef>
+<BodyPartGroupDef>
+    <defName>RearRightInsectLeg</defName>
+    <label>rear right leg</label>
+    <listOrder>10</listOrder>
+</BodyPartGroupDef>
+  
+
+  <BodyDef>
+    <defName>Apini</defName>
+    <label>apini</label>
+    <corePart>
+      <def>Thorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      		  <groups>
+			<li>Torso</li>
+		  </groups>
+      <parts>
+        <li>
+          <def>BeeLeftWing</def>
+          <coverage>0.05</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>BeeRightWing</def>
+          <coverage>0.05</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>Stomach</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>InsectHeart</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Pronotum</def>
+          <coverage>0.08</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+                <def>Head</def>
+<!--              <def>InsectHead</def>-->
+              <coverage>0.65</coverage>
+              <parts>
+                <li>
+                  <def>Brain</def>
+                  <coverage>0.2</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>LeftEye</def>
+                  <coverage>0.15</coverage>
+                </li>
+                <li>
+                  <def>RightEye</def>
+                  <coverage>0.15</coverage>
+                </li>
+                <li>
+                  <def>LeftAntenna</def>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>RightAntenna</def>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>InsectNostril</def>
+                  <coverage>0.1</coverage>
+                </li>
+                <li>
+                  <def>InsectMouth</def>
+                  <coverage>0.05</coverage>
+                  <groups>
+                    <li>Mouth</li>
+                  </groups>
+                  <parts>
+					  <li>
+						  <def>LeftMandible</def>
+						  <coverage>0.05</coverage>
+					  </li>
+					  <li>
+						  <def>RightMandible</def>
+						  <coverage>0.05</coverage>
+					  </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>FrontLeftApiniInsectLeg</def>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+		  <groups>
+			<li>FrontLeftClaws</li>
+		  </groups>
+        </li>
+        <li>
+          <def>FrontRightApiniInsectLeg</def>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+		  <groups>
+			<li>FrontRightClaws</li>
+		  </groups>
+        </li>
+        <li>
+          <def>MiddleLeftInsectLeg</def>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+                    <groups>
+			<li>Legs</li>
+		  </groups>
+        </li>
+        <li>
+          <def>MiddleRightInsectLeg</def>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+                    <groups>
+			<li>Legs</li>
+		  </groups>
+        </li>
+        <li>
+          <def>RearLeftInsectLeg</def>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+      		  <groups>
+			<li>Legs</li>
+		  </groups>
+
+        </li>
+        <li>
+          <def>RearRightInsectLeg</def>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+      		  <groups>
+			<li>Legs</li>
+		  </groups>
+
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+
+</Defs>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  <Apini.ExtraThingDef ParentName="BuildingBase">
+    <defName>HoneyCapsule</defName>
+    <label>honey capsule</label>
+    <thingClass>Apini.Building_FermentingVat</thingClass>
+	<vatProperties>
+		<inputThingDef>Pollen</inputThingDef>
+		<outputThingDef>ApiniHoney</outputThingDef>
+		<maxCapacity>200</maxCapacity>
+		<fermentationModifier>1.2</fermentationModifier>
+		<!-- 1:4 ratio -->
+		<inputToOutputRatio>16</inputToOutputRatio>
+		<!-- Translations, point to custom translation lines. -->
+		<containsInputTranslation>ContainsPollen</containsInputTranslation>
+		<containsOutputTranslation>ContainsHoney</containsOutputTranslation>
+		<fermentedTranslation>FermentedHoney</fermentedTranslation>
+		<fermentationProgressTranslation>HoneyFermentationProgress</fermentationProgressTranslation>
+		<fermentationNonIdealTranslation>HoneyFermentationBarrelOutOfIdealTemperature</fermentationNonIdealTranslation>
+	</vatProperties>
+
+    <graphicData>
+      <texPath>Things/hexagon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>60</pathCost>
+    <building>
+    <isMealSource>true</isMealSource>
+    </building>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A hexagonal container for creating honey from pollen.</description>
+    <costList>
+      <Pollen>20</Pollen>
+      <WoodLog>10</WoodLog>
+      <ApiniWax>30</ApiniWax>
+    </costList>
+		<comps>
+                        <li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_TemperatureRuinable">
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+                                				<minSafeTemperature>-20</minSafeTemperature>
+				<maxSafeTemperature>60</maxSafeTemperature>
+			</li>
+		</comps>
+    <tickerType>Rare</tickerType>
+    <rotatable>true</rotatable>
+    <designationCategory>Production</designationCategory>
+    <constructEffect>ConstructWood</constructEffect>
+  </Apini.ExtraThingDef>
+</ThingDefs>

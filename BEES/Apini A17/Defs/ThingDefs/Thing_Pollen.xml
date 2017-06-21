@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <ThingDef Abstract="True" Name="OrganicProductBase" ParentName="ResourceBase">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>10</DeteriorationRate>
+			<Mass>0.03</Mass>
+    </statBases>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+  
+<ThingDef ParentName="OrganicProductBase" Name="RoughPlantBase" Abstract="True">
+    <ingestible>
+      <foodType>Plant</foodType>
+      <preferability>RawBad</preferability>
+      <nutrition>0.05</nutrition>
+    </ingestible>
+  </ThingDef>
+  
+<ThingDef ParentName="RoughPlantBase">
+    <defName>Pollen</defName>
+    <label>pollen</label>
+    <description>A ball of pollen and nectar gathered from flowers. The vital ingredient to make honey.</description>
+    <graphicData>
+      <texPath>Things/pollen</texPath>
+    </graphicData>
+    <stackLimit>200</stackLimit>
+    <statBases>
+      <MarketValue>0.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+  </ThingDef>
+    
+</Defs>

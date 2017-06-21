@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>Apini</defName>
+    <label>apini</label>
+    
+    <description>Genetically modified giant sentient bee-ings. Originally created by humans as a terraforming bio-tool for the proliferation of angiosperms, these flightless bees are found on countless terraformed rimworlds.\n Apini are often wiped out by the point a planet reaches urbworld status. \n They possess some mamalian DNA, such as complex lung structure. Apini will also happily intergrate themselves into human "hives" if they feel like they have purpose. </description>
+        
+    <statBases>
+      <PsychicSensitivity>1.5</PsychicSensitivity>
+      <ToxicSensitivity>2</ToxicSensitivity>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <LeatherAmount>30</LeatherAmount>
+      <MarketValue>1000</MarketValue>
+      <MoveSpeed>4.75</MoveSpeed>
+      <Flammability>1.0</Flammability>
+      <CarryingCapacity>500</CarryingCapacity>
+      <MentalBreakThreshold>0.01</MentalBreakThreshold>
+      <ResearchSpeed>0.50</ResearchSpeed>
+      <MiningSpeed>0.1</MiningSpeed>
+      <SocialImpact>0.75</SocialImpact>
+      <PlantWorkSpeed>2.5</PlantWorkSpeed>
+      <StonecuttingSpeed>0.55</StonecuttingSpeed>
+      <HarvestFailChance>0.1</HarvestFailChance>
+      <ConstructionSpeed>1.5</ConstructionSpeed>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+    </statBases>
+    	<verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
+        <meleeDamageBaseAmount>5</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
+        <meleeDamageBaseAmount>5</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+
+<alienrace>
+
+<generalSettings>
+    <PawnsSpecificBackstories>true</PawnsSpecificBackstories>
+    
+    <alienPartGenerator>
+    <alienbodytypes>
+    <li>Female</li>
+    </alienbodytypes>
+    <UseGenderedHeads>false</UseGenderedHeads>
+     <alienskincolorgen Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>RGBA(1.0,1.0,1.0,1)</only>
+                </li>
+            </options>
+        </alienskincolorgen>
+    </alienPartGenerator>
+    
+    <factionRelations>
+                <li>
+                    <factions>
+                       <li>Insect</li>
+                    </factions>
+                    <goodwill>
+                       <min>100</min>
+                       <max>100</max>
+                    </goodwill>
+                </li>               
+    </factionRelations>
+
+    <MaleGenderProbability>0.1</MaleGenderProbability>
+
+    <chemicalSettings>
+    <li>
+        <chemical>Smokeleaf</chemical>
+        <ingestible>true</ingestible>
+        <reactions>
+          <li  Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>ApiniSmoke</hediffDef>
+				<Severity>0.45</Severity>
+           </li>
+        </reactions>
+    </li>
+    <li>
+        <chemical>Nicotine</chemical>
+        <ingestible>true</ingestible>
+        <reactions>
+          <li  Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>ApiniSmoke</hediffDef>
+				<Severity>0.45</Severity>
+           </li>
+        </reactions>
+    </li>
+    </chemicalSettings>
+
+    <ForcedRaceTraitEntries>
+        <li>
+            <defname>Beauty</defname>
+            <degree>2</degree>
+            <chance>4</chance>
+        </li>
+        
+        <li>
+        <defname>DrugDesire</defname>
+        <degree>2</degree>
+        <chance>0</chance>
+        </li>
+        <li>
+        <defname>DrugDesire</defname>
+        <degree>1</degree>
+        <chance>0</chance>
+        </li>
+        
+        <li>
+        <defname>Industriousness</defname>
+        <degree>1</degree>
+        <chance>50</chance>
+        </li>
+
+        <li>
+        <defname>Industriousness</defname>
+        <degree>2</degree>
+        <chance>30</chance>
+        </li>
+        
+        <li>
+        <defname>Ascetic</defname>
+        <chance>35</chance>
+        </li>
+        
+        <li>
+        <defname>GreenThumb</defname>
+        <chance>70</chance>
+        </li>
+
+        <li>
+        <defname>Kind</defname>
+        <chance>35</chance>
+        </li>
+        
+    </ForcedRaceTraitEntries>
+    
+    <disallowedTraits>
+        <li>Pyromaniac</li>
+        <li>Jealous</li>
+        <li>Cannibal</li>
+        <li>Nudist</li>
+    </disallowedTraits>
+
+</generalSettings>    
+
+
+<graphicPaths>
+    <li>
+        <body>Apini/Body/</body>
+        <head>Apini/Head/</head>
+    </li>
+</graphicPaths>
+
+
+<hairSettings>
+    <HasHair>true</HasHair>
+     <hairTags>
+        <li>Apini</li>
+    </hairTags>
+</hairSettings>
+
+
+
+<relationSettings>
+            <relationChanceModifierChild>0</relationChanceModifierChild>
+            <relationChanceModifierExLover>1</relationChanceModifierExLover>
+            <relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+            <relationChanceModifierFiance>1</relationChanceModifierFiance>
+            <relationChanceModifierLover>1</relationChanceModifierLover>
+            <relationChanceModifierParent>0</relationChanceModifierParent>
+            <relationChanceModifierSibling>10</relationChanceModifierSibling>
+            <relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+</relationSettings>
+
+
+<pawnKindSettings>
+    <alienslavekinds>
+        <li>
+            <kindDefs>
+                <li>ApiniPlayer</li>
+            </kindDefs>
+            <chance>70.0</chance>
+        </li>
+    </alienslavekinds>
+
+    <startingColonists>
+        <li>
+            <pawnKindEntries>
+                <li>
+                    <kindDefs>
+                        <li>ApiniPlayer</li>
+                    </kindDefs>
+                    <chance>10.0</chance>
+                </li>
+            </pawnKindEntries>
+            <factionDefs>
+                <li>PlayerTribe</li> 
+            </factionDefs>
+        </li>
+    </startingColonists>
+    <alienwandererkinds>
+                <li>
+                    <pawnKindEntries>
+                        <li>
+                            <kindDefs>
+                                <li>ApiniPlayer</li>
+                            </kindDefs>
+                            <chance>90.0</chance>
+                        </li>
+                    </pawnKindEntries>
+                    <factionDefs>
+                        <li>TribalApiniPlayer</li> 
+                    </factionDefs>
+                </li>
+    </alienwandererkinds>
+</pawnKindSettings>
+       
+
+ <thoughtSettings>
+    <cannotReceiveThoughts>
+      <li>AteRawFood</li>
+      <li>AteKibble</li>
+      <li>AteWithoutTable</li>
+      <li>SleepDisturbed</li>
+      <li>SleptOnGround</li>
+      <li>NeedRest</li>
+      <li>Naked</li>
+      <li>ObservedLayingCorpse</li>
+      <li>ButcheredHumanlikeCorpse</li>
+      <li>KnowButcheredHumanlikeCorpse</li>
+      <li>AteHumanlikeMeatDirect</li>
+      <li>AteHumanlikeMeatAsIngredient</li>
+    </cannotReceiveThoughts>
+    
+    <ateThoughtSpecific>
+                <li>
+                    <raceList>
+                        <li>Apini</li>
+                    </raceList>
+                    <thought>ApiniInsectDirect</thought>
+                    <ingredientThought>ApiniInsect</ingredientThought>
+                </li>
+    </ateThoughtSpecific>
+
+    <replacerList>
+                <li>
+                    <original>AteInsectMeatAsIngredient</original>
+                    <replacer>ApiniInsect</replacer> 
+                </li>
+                <li>
+                    <original>AteInsectMeatDirect</original>
+                    <replacer>ApiniInsectDirect</replacer> 
+                </li>
+    </replacerList>
+
+    
+</thoughtSettings>
+
+
+<raceRestriction>
+    <apparelList>
+        <li>ApiniApron</li>
+    </apparelList>
+    <onlyUseRacerestrictedApparel>true</onlyUseRacerestrictedApparel> 
+ 
+    <recipeList>
+        <li>MakeApiniWax</li>
+    </recipeList>
+
+<!--     <researchList>
+        <li>
+            <projects>
+<li>Frostbell</li>
+            </projects>
+        </li>
+    </researchList> -->
+    
+    <plantList>
+<!--            <li>PlantLavender</li> -->
+                <li>PlantFrostbell</li>
+    </plantList>
+
+    <buildingList>
+                <li>HoneyCapsule</li>
+                <li>ApiniWaxFloor</li>
+                <li>ApiniWaxTile</li>
+    </buildingList>
+    
+    <conceptList>
+        <li>BeeswaxMaking</li>
+        <li>ApiniMakingHoney</li>
+    </conceptList>
+
+    <workGiverList>
+        <li>FillHoneyFermentingVat</li>
+        <li>TakeHoneyOutOfFermentingVat</li>
+    </workGiverList>
+    
+    <whiteApparelList>
+        <li>Apparel_PersonalShield</li>
+    </whiteApparelList>
+    
+</raceRestriction>
+
+
+
+</alienrace>
+    
+<race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <nameGenerator>NamerPersonApini</nameGenerator>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>false</makesFootprints>
+      <lifeExpectancy>60</lifeExpectancy>
+      <leatherColor>(255,250,205)</leatherColor>
+      <bloodDef>FilthBloodInsect</bloodDef>
+      <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
+      <leatherInsulation>0.70</leatherInsulation>
+      <leatherLabel>apini chitin</leatherLabel>
+      <leatherMarketValueFactor>3</leatherMarketValueFactor>
+      <nameCategory>HumanStandard</nameCategory>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <body>Apini</body>
+      <baseBodySize>0.8</baseBodySize>
+      <baseHealthScale>1.1</baseHealthScale>
+      <baseHungerRate>0.35</baseHungerRate>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+        <soundWounded>Pawn_Apini_Wounded</soundWounded>
+        <soundDeath>Pawn_Apini_Death</soundDeath>
+        </li>
+
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Apini_Wounded</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialshadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialshadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(14,0)</li>
+          <li>(16,100)</li>
+          <li>(50,100)</li>
+          <li>(60,30)</li>
+          <li>(70,18)</li>
+          <li>(80,10)</li>
+          <li>(90,3)</li>
+          <li>(100,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+      </hediffGiverSets>
+</race>
+    <recipes>
+      <li>InstallApiniPowerClaw</li>
+      <li>InstallApiniScytherBlade</li>
+      <li>InstallBionicEye</li>
+      <li>InstallApiniBionicArm</li>
+      <li>InstallApiniSimpleProstheticArm</li>
+      <li>InstallApiniSimpleProstheticLeg</li>
+      <li>InstallApiniPegLeg</li>
+      <li>InstallJoywire</li>
+      <li>InstallPainstopper</li>
+      <li>InstallApiniNaturalHeart</li>
+      <li>InstallNaturalLung</li>
+      <li>ExciseCarcinoma</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+    </recipes>
+    
+</AlienRace.ThingDef_AlienRace>
+</Defs>

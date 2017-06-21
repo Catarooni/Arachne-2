@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<FactionDef Abstract="True" Name="Playerbase">
+    <homeIconPath>World/WorldObjects/Defaultbase</homeIconPath>
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+
+<FactionDef ParentName="Playerbase">
+    <defName>TribalApiniPlayer</defName>
+    <label>Arachne Den</label>
+    <description>A den of vicious Arachne.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>ApiniPlayer</basicMemberKind>
+    <pawnsPlural>Apini</pawnsPlural>
+<hairTags>
+<li>Tribal</li>
+<li>Urban</li>
+</hairTags>
+<techLevel>Neolithic</techLevel>
+<backstoryCategory>ApiniBackstory</backstoryCategory>
+<pawnNameMaker>NamerPersonApini</pawnNameMaker>
+    <homeIconPath>Apini/npcZoom</homeIconPath>
+    <expandingIconTexture>Apini/bee</expandingIconTexture>
+    <colorSpectrum>
+      <li>(255,165,0)</li>
+    </colorSpectrum>
+<startingResearchTags>
+<li>TribalStart</li>
+</startingResearchTags>
+<apparelStuffFilter>
+<thingDefs>
+<li>Cloth</li>
+</thingDefs>
+</apparelStuffFilter>
+</FactionDef>
+</Defs>

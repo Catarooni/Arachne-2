@@ -1,0 +1,62 @@
+<Defs>
+     <ThoughtDef>
+    <defName>ApiniInsect</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1.0</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>ate cooked insect meat</label>
+        <description>I ate a meal cooked from gray, slimy insect meat. Eating kin like this is disgusting.</description>
+        <baseMoodEffect>-7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ApiniInsectDirect</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1.0</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>ate insect meat</label>
+        <description>I ate some gray, slimy insect meat. Eating kin like this is utterly awful. I wanna hurl.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+<!-- Azuri -->
+     <ThoughtDef>
+    <defName>AzuriInsect</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1.0</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>ate cooked insect meat</label>
+        <description>I ate a meal cooked from gray, sssssslimy insect meat. I would have rathered it raw.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AzuriInsectDirect</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1.0</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>ate insect meat</label>
+        <description>I ate ssssssome gray, ssssslimy inssssect meat. Sssssso delicious! Sluuuuuurp</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

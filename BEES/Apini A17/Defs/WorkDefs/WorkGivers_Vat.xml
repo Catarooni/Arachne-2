@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+	<Apini.WorkGiverDynamicDef>
+		<defName>FillHoneyFermentingVat</defName>
+		<label>fill fermenting vats</label>
+		<giverClass>Apini.WorkGiver_FillFermentingVat</giverClass>
+		<inputThingDef>HoneyVat</inputThingDef>
+		<jobDef>FillFermentingVat</jobDef>
+		<workType>Hauling</workType>
+		<verb>fill</verb>
+		<gerund>filling</gerund>
+		<priorityInType>5</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</Apini.WorkGiverDynamicDef>
+	
+	<Apini.WorkGiverDynamicDef>
+		<defName>TakeHoneyOutOfFermentingVat</defName>
+		<label>take honey out of fermenting vat</label>
+		<giverClass>Apini.WorkGiver_TakeThingOutOfFermenter</giverClass>
+		<outputThingDef>HoneyVat</outputThingDef>
+		<jobDef>TakeThingOutOfFermentingVat</jobDef>
+		<workType>Hauling</workType>
+		<verb>take honey</verb>
+		<gerund>taking honey from</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</Apini.WorkGiverDynamicDef>
+	
+	<Apini.WorkGiverDynamicDef>
+		<defName>FillHoneyFermentingCapsule</defName>
+		<label>fill fermenting vats</label>
+		<giverClass>Apini.WorkGiver_FillFermentingVat</giverClass>
+		<inputThingDef>HoneyCapsule</inputThingDef>
+		<jobDef>FillFermentingVat</jobDef>
+		<workType>Hauling</workType>
+		<verb>fill</verb>
+		<gerund>filling</gerund>
+		<priorityInType>5</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</Apini.WorkGiverDynamicDef>
+	
+	<Apini.WorkGiverDynamicDef>
+		<defName>TakeHoneyOutOfFermentingCapsule</defName>
+		<label>take honey out of fermenting vat</label>
+		<giverClass>Apini.WorkGiver_TakeThingOutOfFermenter</giverClass>
+		<outputThingDef>HoneyCapsule</outputThingDef>
+		<jobDef>TakeThingOutOfFermentingVat</jobDef>
+		<workType>Hauling</workType>
+		<verb>take honey</verb>
+		<gerund>taking honey from</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</Apini.WorkGiverDynamicDef>
+</WorkGivers>

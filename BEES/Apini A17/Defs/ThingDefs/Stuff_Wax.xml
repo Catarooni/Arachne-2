@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="ResourceBase">
+    <defName>ApiniWax</defName>
+    <label>beeswax</label>
+    <description>Wax produced by Apini. Often used for constucting sturdy buildings.</description>
+    <graphicData>
+      <texPath>Things/wax</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <statBases>
+      <MarketValue>3</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.4</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <stuffProps>
+      <stuffAdjective>beeswax</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>0.5</commonality>
+      <color>(255,228,181)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+        <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+        <Beauty>1.25</Beauty>
+        <Flammability>1</Flammability>
+        <WorkToMake>0.7</WorkToMake>
+        <WorkToBuild>0.7</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+<!--    <storedConceptLearnOpportunity>BeeswaxMaking</storedConceptLearnOpportunity> -->
+</ThingDef>
+
+<RecipeDef>
+<defName>MakeApiniWax</defName>
+ <label>make beeswax</label>
+    <description>Create wax from plant matter.</description>
+    <jobString>Making wax.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+       <workSkill>Crafting</workSkill>
+        <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+
+      
+    <ingredients>
+        <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>PlantMatter</li>
+          </categories>
+          <thingDefs>
+            <li>Hay</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li><filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+           </filter>
+          <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <ApiniWax>10</ApiniWax>
+    </products>
+
+    <fixedIngredientFilter>
+      <categories>
+            <li>PlantFoodRaw</li>
+            <li>PlantMatter</li>
+      </categories>
+      <thingDefs>
+        <li>Hay</li>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    
+ 
+</RecipeDef>
+</Defs>

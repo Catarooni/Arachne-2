@@ -1,0 +1,19 @@
+<Defs>
+<TraitDef>
+    <defName>ApiniDrone</defName>
+    <commonality>100</commonality>
+    <commonalityFemale>0.0</commonalityFemale>
+    <degreeDatas>
+        <li>
+        <label>Drone</label>
+        <description>NAME is a rare male apini, who narrowly escaped death by snoo-snoo.\nDrones have special eyes for spotting queens.</description>
+        <degree>2</degree>
+        <statOffsets>
+          <ShootingAccuracy>1.0</ShootingAccuracy>
+          <MentalBreakThreshold>0.12</MentalBreakThreshold>
+        </statOffsets>
+        </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>
