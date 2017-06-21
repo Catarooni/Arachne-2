@@ -11,22 +11,72 @@
     <useDestroyedOutLabel>true</useDestroyedOutLabel>
     <beautyRelated>true</beautyRelated>
     <tags>
-      <li>SightSource</li>
       <li>HearingSource</li>
     </tags>
     <frostbiteVulnerability>5</frostbiteVulnerability>
   </BodyPartDef>
 
+  <BodyPartDef>
+	<defName>rightSecEye</defName>
+	<label>right secondary eye</label>
+	<hitPoints>10</hitPoints>
+	<oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <useDestroyedOutLabel>true</useDestroyedOutLabel>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+  </BodyPartDef>
+  
     <BodyPartDef>
-    <defName>LeftAntenna</defName>
-    <label>left antenna</label>
+	<defName>leftSecEye</defName>
+	<label>left secondary eye</label>
+	<hitPoints>10</hitPoints>
+	<oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <useDestroyedOutLabel>true</useDestroyedOutLabel>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+  </BodyPartDef>
+  
+    <BodyPartDef>
+	<defName>rightTertEye</defName>
+	<label>right tertiary eye</label>
+	<hitPoints>10</hitPoints>
+	<oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <useDestroyedOutLabel>true</useDestroyedOutLabel>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+  </BodyPartDef>
+  
+    <BodyPartDef>
+	<defName>leftTertEye</defName>
+	<label>left tertiary eye</label>
+	<hitPoints>10</hitPoints>
+	<oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <useDestroyedOutLabel>true</useDestroyedOutLabel>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+  </BodyPartDef>
+  
+    <BodyPartDef>
+    <defName>LeftPedipalp</defName>
+    <label>left pedipalp</label>
     <hitPoints>10</hitPoints>
     <oldInjuryBaseChance>1</oldInjuryBaseChance>
     <skinCovered>false</skinCovered>
     <useDestroyedOutLabel>true</useDestroyedOutLabel>
     <beautyRelated>true</beautyRelated>
     <tags>
-      <li>SightSource</li>
       <li>HearingSource</li>
     </tags>
     <frostbiteVulnerability>5</frostbiteVulnerability>
@@ -78,8 +128,8 @@
     </BodyPartDef>
 
 	<BodyPartDef>
-		<defName>FrontLeftApiniInsectLeg</defName>
-		<label>front left leg</label>
+		<defName>LeftArachneInsectArm</defName>
+		<label>left arm</label>
 		<hitPoints>20</hitPoints>
 		<frostbiteVulnerability>0.1</frostbiteVulnerability>
 		<oldInjuryBaseChance>0</oldInjuryBaseChance>
@@ -91,8 +141,8 @@
 	</BodyPartDef>
 
 	<BodyPartDef>
-		<defName>FrontRightApiniInsectLeg</defName>
-		<label>front right leg</label>
+		<defName>RightArachneInsectArm</defName>
+		<label>right arm</label>
 		<hitPoints>20</hitPoints>
 		<frostbiteVulnerability>0.1</frostbiteVulnerability>
 		<oldInjuryBaseChance>0</oldInjuryBaseChance>
@@ -102,6 +152,7 @@
       <li>ManipulationCore</li>
     </tags>
 	</BodyPartDef>
+	
 
 <BodyPartGroupDef>
     <defName>ApiniThorax</defName>
@@ -164,6 +215,22 @@
                   <def>RightEye</def>
                   <coverage>0.15</coverage>
                 </li>
+				<li>
+					<def>leftSecEye</def>
+					<coverage>0.07</coverage>
+				</li>
+				<li>
+					<def>rightSecEye</def>
+					<coverage>0.07</coverage>
+				</li>
+				<li>
+					<def>leftTertEye</def>
+					<coverage>0.03</coverage>
+				</li>
+				<li>
+					<def>rightTertEye</def>
+					<coverage>0.03</coverage>
+				</li>
                 <li>
                   <def>LeftAntenna</def>
                   <coverage>0.05</coverage>
@@ -198,17 +265,17 @@
           </parts>
         </li>
         <li>
-          <def>FrontLeftApiniInsectLeg</def>
+          <def>LeftArachneInsectArm</def>
           <coverage>0.06</coverage>
-          <height>Bottom</height>
+          <height>Middle</height>
 		  <groups>
 			<li>FrontLeftClaws</li>
 		  </groups>
         </li>
         <li>
-          <def>FrontRightApiniInsectLeg</def>
+          <def>RightArachneInsectArm</def>
           <coverage>0.06</coverage>
-          <height>Bottom</height>
+          <height>Middle</height>
 		  <groups>
 			<li>FrontRightClaws</li>
 		  </groups>

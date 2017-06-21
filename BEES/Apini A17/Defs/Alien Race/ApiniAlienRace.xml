@@ -2,28 +2,28 @@
 <Defs>
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>Apini</defName>
-    <label>apini</label>
+    <label>arachne</label>
     
-    <description>Genetically modified giant sentient bee-ings. Originally created by humans as a terraforming bio-tool for the proliferation of angiosperms, these flightless bees are found on countless terraformed rimworlds.\n Apini are often wiped out by the point a planet reaches urbworld status. \n They possess some mamalian DNA, such as complex lung structure. Apini will also happily intergrate themselves into human "hives" if they feel like they have purpose. </description>
+    <description>Genetically modified giant sentient spiders. Originally created as a terraforming species, they have developed their own culture and now prey on the humans who first created them.</description
         
     <statBases>
-      <PsychicSensitivity>1.5</PsychicSensitivity>
-      <ToxicSensitivity>2</ToxicSensitivity>
-      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <PsychicSensitivity>1</PsychicSensitivity>
+      <ToxicSensitivity>0.5</ToxicSensitivity>
+      <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+      <ComfyTemperatureMax>35</ComfyTemperatureMax>
       <LeatherAmount>30</LeatherAmount>
       <MarketValue>1000</MarketValue>
       <MoveSpeed>4.75</MoveSpeed>
       <Flammability>1.0</Flammability>
       <CarryingCapacity>500</CarryingCapacity>
       <MentalBreakThreshold>0.01</MentalBreakThreshold>
-      <ResearchSpeed>0.50</ResearchSpeed>
-      <MiningSpeed>0.5</MiningSpeed>
-      <SocialImpact>0.75</SocialImpact>
-      <PlantWorkSpeed>2.5</PlantWorkSpeed>
-      <StonecuttingSpeed>0.55</StonecuttingSpeed>
-      <PlantHarvestYield>2.0</PlantHarvestYield>
-      <ConstructionSpeed>1.5</ConstructionSpeed>
+      <ResearchSpeed>1.0</ResearchSpeed>
+      <MiningSpeed>1.25</MiningSpeed>
+      <SocialImpact>0.25</SocialImpact>
+      <PlantWorkSpeed>0.5</PlantWorkSpeed>
+      <StonecuttingSpeed>1.0</StonecuttingSpeed>
+      <PlantHarvestYield>1.0</PlantHarvestYield>
+      <ConstructionSpeed>1.0</ConstructionSpeed>
       <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
     </statBases>
@@ -70,13 +70,11 @@
                        <li>Insect</li>
                     </factions>
                     <goodwill>
-                       <min>100</min>
-                       <max>100</max>
+                       <min>-100</min>
+                       <max>0</max>
                     </goodwill>
                 </li>               
     </factionRelations>
-
-    <MaleGenderProbability>0.1</MaleGenderProbability>
 
     <chemicalSettings>
     <li>
@@ -114,12 +112,20 @@
 
     <ForcedRaceTraitEntries>
 	<li>
+		<defname>Kind</defname>
+		<chance>1</chance>
+	</li>
+	<li>
+		<defname>Abrasive</defname>
+		<chance>10</chance>
+	</li>
+	<li>
 	    <defname>Bloodlust</defname>
-	    <chance>50</chance>
+	    <chance>35</chance>
 	</li>
         <li>
             <defname>Psychopath</defname>
-            <chance>50</chance>
+            <chance>35</chance>
         </li>
 
         <li>
@@ -172,11 +178,6 @@
         <defname>GreenThumb</defname>
         <chance>0</chance>
         </li>
-
-        <li>
-        <defname>Kind</defname>
-        <chance>0</chance>
-        </li>
         </ForcedRaceTraitEntries>
 
 
@@ -202,13 +203,13 @@
 
 <relationSettings>
             <relationChanceModifierChild>0</relationChanceModifierChild>
-            <relationChanceModifierExLover>1</relationChanceModifierExLover>
-            <relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
-            <relationChanceModifierFiance>1</relationChanceModifierFiance>
-            <relationChanceModifierLover>1</relationChanceModifierLover>
+            <relationChanceModifierExLover>0</relationChanceModifierExLover>
+            <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+            <relationChanceModifierFiance>0</relationChanceModifierFiance>
+            <relationChanceModifierLover>0</relationChanceModifierLover>
             <relationChanceModifierParent>0</relationChanceModifierParent>
             <relationChanceModifierSibling>10</relationChanceModifierSibling>
-            <relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+            <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
 </relationSettings>
 
 
@@ -264,6 +265,7 @@
       <li>SleptOnGround</li>
       <li>NeedRest</li>
       <li>Naked</li>
+	  <li>InDarkness</li>
       <li>ObservedLayingCorpse</li>
       <li>ButcheredHumanlikeCorpse</li>
       <li>KnowButcheredHumanlikeCorpse</li>

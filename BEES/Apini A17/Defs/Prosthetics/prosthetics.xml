@@ -161,8 +161,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>FrontRightArachneInsectLeg</li>
-			<li>FrontLeftArachneInsectLeg</li>                      
+			<li>RightArachneInsectArm</li>
+			<li>LeftArachneInsectArm</li>                      
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticArm</addsHediff>
 	</RecipeDef>
@@ -201,8 +201,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>FrontRightArachneInsectLeg</li>
-			<li>FrontLeftArachneInsectLeg</li>   
+			<li>RightArachneInsectArm</li>
+			<li>LeftArachneInsectArm</li>   
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicArm</addsHediff>
 	</RecipeDef>
@@ -241,8 +241,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>FrontRightArachneInsectLeg</li>
-			<li>FrontLeftArachneInsectLeg</li>   
+			<li>RightArachneInsectArm</li>
+			<li>LeftArachneInsectArm</li>   
 		</appliedOnFixedBodyParts>
 		<addsHediff>PowerClaw</addsHediff>
     </RecipeDef>
@@ -281,8 +281,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>FrontRightArachneInsectLeg</li>
-			<li>FrontLeftArachneInsectLeg</li>   
+			<li>RightArachneInsectArm</li>
+			<li>LeftArachneInsectArm</li>   
 		</appliedOnFixedBodyParts>
 		<addsHediff>ScytherBlade</addsHediff>
 	</RecipeDef>
