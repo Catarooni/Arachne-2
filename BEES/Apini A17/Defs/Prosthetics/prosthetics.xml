@@ -248,7 +248,7 @@
     </RecipeDef>
 
  <RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallApiniScytherBlade</defName>
+		<defName>InstallArachneScytherBlade</defName>
 		<label>install scyther blade</label>
 		<description>Installs scyther blade.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -288,7 +288,7 @@
 	</RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>InstallApiniNaturalHeart</defName>
+    <defName>InstallArachneNaturalHeart</defName>
     <label>install heart</label>
     <description>Installs heart.</description>
     <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
