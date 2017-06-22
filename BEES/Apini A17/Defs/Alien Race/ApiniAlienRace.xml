@@ -4,7 +4,7 @@
     <defName>Apini</defName>
     <label>arachne</label>
     
-    <description>Genetically modified giant sentient spiders. Originally created as a terraforming species, they have developed their own culture and now prey on the humans who first created them.</description
+    <description>Genetically modified giant sentient spiders. Originally created as a terraforming species, they have developed their own culture and now prey on the humans who first created them.</description>
         
     <statBases>
       <PsychicSensitivity>1</PsychicSensitivity>
@@ -59,7 +59,19 @@
                 <li>
                     <weight>10</weight>
                     <only>RGBA(1.0,1.0,1.0,1)</only>
+		</li>
+		<li>
+		    <weight>10</weight>
+		    <only>RGBA(0.5,0.5,0.5,1)</only>
                 </li>
+		<li>
+		    <weight>10</weight>
+		    <only>RGBA(0.65,0.65,0.75,1)</only>
+		</li>
+		<li>
+		    <weight>10</weight>
+		    <only>RGBA(0.75,0.65,0.65,1)</only>
+		</li>
             </options>
         </alienskincolorgen>
     </alienPartGenerator>
@@ -299,10 +311,6 @@
 
 
 <raceRestriction>
-    <apparelList>
-        <li>ApiniApron</li>
-        <!--<li>ApiniHoneyGlassHelmet</li> -->
-    </apparelList>
     <onlyUseRacerestrictedApparel>true</onlyUseRacerestrictedApparel> 
  
     <recipeList>
