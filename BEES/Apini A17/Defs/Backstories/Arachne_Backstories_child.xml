@@ -1,0 +1,17 @@
+<Defs>
+	<AlienRace.BackstoryDef>
+	<defName>ArachneCannibal</defName>
+	<title>Spiderling Cannibal</title>
+	<titleShort>Cannibal</titleShort>
+	<baseDescription>NAME devoured all of HIS siblings, feasting on their bodies before building HIS first web.</baseDescription>
+	<slot>Childhood</slot>
+	<spawnCategories>
+		<li>ArachneBackstory</li>
+	<spawnCategories>
+
+	<skillGains>
+	<li>
+		<defName>Melee</defName>
+		<amount>6</amount>
+	</AlienRace.BackstoryDef>
+</Defs>
