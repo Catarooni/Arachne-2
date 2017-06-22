@@ -13,5 +13,27 @@
 	<li>
 		<defName>Melee</defName>
 		<amount>6</amount>
+	</li>
 	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+	<defName>ArachneCocooned</defName>
+	<title>Cocooned Early</title>
+	<titleShort>Cocooned Early</titleShort>
+	<baseDescription>NAME cocooned early, seeing very little of the world before beginning HIS molt. In HIS cocoon, HE dreamed.</baseDescription>
+	<slot>Childhood</slot>
+	<spawnCategories>
+		<li>ArachneBackstory</li>
+	</spawnCategories>
+	<skillGains>
+	<li>
+		<defName>Intellectual</defName>
+		<amount>6</amount>
+	</li>
+	<li>
+		<defName>Melee</defName>
+		<amount>-2</amount>
+	</li>
+	</AlienRace.BackstoryDef>
+		
 </Defs>
